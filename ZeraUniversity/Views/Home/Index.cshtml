@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row p-5">
+    <div class="col-md-4">
+        <h2>Welcome to Zera University</h2>
+        <img src="./img/pexels-keira-burton-6147276.jpg" alt="university image" class="img-fluid"/>
+    </div>
+    <div class="col-md-4">
+        <h2>Register a New student</h2>
+        <p>You can Register a new student in the following section.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Students" asp-action="create">Register</a>
+    </div>
+    <div class="col-md-4">
+        <h2>More about us</h2>
+        <p>Read more about us and get our contact Information.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="About">Read more</a>
+    </div>
+</div>

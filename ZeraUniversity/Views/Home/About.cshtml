@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ZeraUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
+
+@{
+    ViewData["Title"] = "Student Body Statistics";
+}
+
+<h2>Student Body Statistics</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td>
+                @item.StudentCount
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="card border-primary mt-5" style="max-width: 20rem;">
+    <div class="card-header">Contact Information</div>
+    <div class="card-body">
+        <p class="card-text">Christian Soldevilla</p>
+        <p class="card-text">sol17011@byui.edu</p>
+        <p class="card-text">Puno - Peru</p>
+    </div>
+</div>
